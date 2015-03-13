@@ -1,6 +1,4 @@
-require 'serverspec'
-
-set :backend, :exec
+require 'spec_helper'
 
 describe 'clowns site' do
     it 'responds on port 80' do

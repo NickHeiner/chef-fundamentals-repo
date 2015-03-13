@@ -1,6 +1,4 @@
-require 'serverspec'
-
-set :backend, :exec
+require 'spec_helper'
 
 describe 'the muthafuggin BEARS site' do
     it 'responds on port 81' do
