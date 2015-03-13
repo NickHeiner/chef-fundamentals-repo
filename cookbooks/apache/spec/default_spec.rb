@@ -1,6 +1,4 @@
-require 'chefspec'
-
-at_exit { ChefSpec::Coverage.report! }
+require 'spec_helper'
 
 describe 'apache::default' do
   let(:chef_run) do
