@@ -10,4 +10,8 @@ describe 'apache::default' do
   it 'installs apache2' do
     expect(chef_run).to install_package 'httpd'
   end
+
+  it 'writes clowns.conf file' do
+    expect(chef_run).to create_template('/etc/httpd/conf.d/clowns.conf')
+  end
 end
