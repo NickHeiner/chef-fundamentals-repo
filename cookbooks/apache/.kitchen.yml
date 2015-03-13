@@ -13,3 +13,5 @@ suites:
     run_list:
       - recipe[apache::default]
     attributes:
+        motd:
+            company: For Profit Online University
